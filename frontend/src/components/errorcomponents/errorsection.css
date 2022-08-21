@@ -1,0 +1,50 @@
+.pagenotfound{
+    height: 80vh;
+    animation: animate 40s ease  infinite;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+@keyframes animate {
+    0%,100%{
+        background-image: url('../../assets/mainassets/slide1.jpg');
+    }
+    25%{
+        background-image: url('../../assets/mainassets/slide2.jpg');
+    }
+    75%{
+        background-image: url('../../assets/mainassets/slide3.jpg');
+    }
+
+}
+.maincontent{
+    text-align: center;
+    color: rgb(202, 189, 189);
+   
+   
+}
+.dummylorem{
+    max-width: 70ch;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+input[type=text]{
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    padding: 2% 4% 2% 4%;
+    color: rgb(77, 70, 70);
+    text-transform: capitalize;
+    
+}
+.next{
+    color: #eee;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    padding: 2% 4% 2% 4%;
+    cursor: pointer;
+    background-color: rgb(90, 85, 85);
+    
+}

@@ -1,0 +1,27 @@
+from dataclasses import field, fields
+from rest_framework.serializers import ModelSerializer
+from .models import Companyinfo,BackgroundImages,Hotels,Reservations
+from django.contrib.auth.models import User
+from .forms import NewUserForm
+class Companyserializer(ModelSerializer):
+    class Meta:
+        model = Companyinfo
+        fields= '__all__'
+class Backgroundserializer(ModelSerializer):
+    class Meta:
+        model = BackgroundImages
+        fields = '__all__'
+class Hotelsserializer(ModelSerializer):
+    class Meta:
+        model = Hotels
+        fields = '__all__'
+class NewUserSerilzer(ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["username", "email", "password","first_name"]
+    def create(self, validated_data):
+        return User.objects.create_user(**validated_data)
+class EveryReservationSerilizer(ModelSerializer):
+    class Meta:
+        model = Reservations
+        fields = '__all__'

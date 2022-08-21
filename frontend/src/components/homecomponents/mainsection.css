@@ -1,0 +1,165 @@
+
+.slider{
+    
+    height: 80vh;
+    justify-content: center;
+    animation: animate 7s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+        background-image: url('../../assets/mainassets/slide1.jpg');
+    }
+    25%{
+        background-image: url('../../assets/mainassets/slide2.jpg');
+    }
+    75%{
+        background-image: url('../../assets/mainassets/slide3.jpg');
+    }
+
+    
+}
+.animatetext{
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    padding-top: 6rem;
+    color: rgb(202, 144, 37);
+}
+.animated{
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1px;
+    transition: 0.3s ease-in-out all;
+    padding-top: 2rem;
+}
+.headerSearch{
+    background-color: rgb(39, 36, 36);
+    color: #fff;
+
+}
+
+
+.btn{
+    outline: none;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(175, 141, 77);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: .9rem;
+    padding-top: .8rem;
+    white-space: nowrap;
+
+}
+.btn:hover{
+    background-color: rgb(255, 224, 224);
+    color: rgb(175, 141, 77);
+    border: rgb(175, 141, 77) 1px solid;
+}
+.calendarehidde{
+    display: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity:0;
+  pointer-events:none;
+}
+*{
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.labels{
+    display: flex;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+.headerSearch{
+    width: 100%;
+}
+.calendare{
+    position: absolute;
+    top: 20rem;
+    left: 35rem;
+}
+.calendarefr{
+    position: absolute;
+    top: 20rem;
+    left: 22rem;
+}
+
+.checkininput{
+    width: 100%;
+}
+
+
+
+/* Enis */
+.input__fields__container {
+    background-color: #1e1e1e;
+    padding: 2rem 0;
+}
+
+.inputfields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
+
+.alllabels{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin:0;
+    gap: 0.4rem;
+
+}
+
+.label-label{
+    color: gray;
+    padding: 0;
+    margin:0;
+    font-size: 0.8rem;
+}
+
+
+input[type=date]{
+    background-color: transparent;
+    color: gray;
+    outline: none;
+    border: none;    
+    border: 1px solid gray;
+    cursor: pointer;
+    padding: 0.8rem;
+    margin: 0;
+    min-width: 200px;
+}
+
+input[type=number]{
+    background-color: transparent;
+    color: gray;
+    outline: none;
+    border: none;    
+    border: 1px solid gray;
+    cursor: pointer;
+    padding: 0.8rem;
+    margin: 0;
+    min-width: 200px;
+
+}
+
+.booknow{
+    display: flex;
+    align-self: flex-end;
+}

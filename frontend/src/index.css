@@ -1,0 +1,31 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+ font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  background-color: #eee;
+  margin: 0;
+  padding:0;
+  
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  transition: 0.3s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+::selection {
+  background: rgb(226, 157, 100); 
+  color: #fff;
+}
+::-moz-selection {
+  background: rgb(224, 160, 107);
+  color: #fff;
+}

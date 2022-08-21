@@ -1,0 +1,64 @@
+.maindetails{
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: 20% 50%;
+}
+.roomdetailsnav{
+    display: grid;
+    font-size: .9rem;
+    cursor: pointer;
+    height: 30vh;
+   
+}
+.devis{
+    
+    margin-right: 20rem;
+    width: 60%;
+     background-color: rgb(192, 171, 171);
+    color:rgb(192, 171, 171) ;
+    border: none;
+    height: 2px;
+    display: flex;
+}
+.devissd{
+    margin-right: 20rem;
+    width: 60%;
+    height: 2px;
+    display: flex;
+    background-color: rgb(192, 171, 171);
+    color:rgb(192, 171, 171) ;
+    border: none;
+}
+.informationtitle{
+    letter-spacing: .1rem;
+    padding-top: 1rem;
+}
+.descriptionhotel{
+    color: rgb(156, 146, 146);
+    display: flex;
+    line-height: 1.8rem;
+    
+}
+.roomdeactive{
+    color: rgb(156, 146, 146);
+}
+.devi{
+    padding-top: 2px;
+    background-color: rgb(192, 171, 171);
+    color:rgb(192, 171, 171) ;
+    border: none;
+}
+
+ul {
+    
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    list-style: none;
+    padding: 0;
+    
+}
+.elements{
+    padding-top: 1.5rem;
+    color: rgb(122, 108, 108);
+}

@@ -1,0 +1,74 @@
+.detailsection{
+        display: flex;
+        background-color: rgb(69, 69, 69);
+        width: 98%;
+        
+        
+}
+.reservationhotel{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.reserv{
+    color: rgb(206, 201, 201);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    
+}
+.reservationfrom{
+    display: flex;
+    padding-left: 2rem;
+    flex-direction: column;
+    
+    color: rgb(206, 201, 201);
+    width: 92%;
+}
+.loggedin{
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.registerbtn{
+    outline: none;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(175, 141, 77);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: .9rem;
+    padding-top: .8rem;
+    white-space: nowrap;
+    margin-top: 5rem;
+}
+.inital__price{
+    font-size: .9rem;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+.pricehotels{
+    
+    margin-top: .7rem;
+
+}
+.reservcalendar{
+    position: absolute;
+    top: 7rem;
+}
+.reservcalendarsd{
+    position: absolute;
+    top: 13rem;
+}
+.inital__pricesd{
+    font-size: .9rem;
+    margin-bottom: 0;
+    margin-top: .2rem;
+}
+.pricehotelssd{
+    
+    margin-top: .7rem;
+
+}

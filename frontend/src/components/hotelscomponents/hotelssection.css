@@ -1,0 +1,118 @@
+
+.hotels{
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    width: 97.6%;
+    height: 18vh;
+    align-items: center;
+    font-size: .7rem;
+}
+.smalltitle{
+    text-transform: uppercase;
+    color: rgb(85, 79, 79);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: .1rem;
+    
+}
+.hotelnav{
+    display: flex;
+    gap: 1rem;
+    color: rgb(85, 79, 79);
+}
+.tohome{
+    text-decoration: none;
+    color: rgb(85, 79, 79);
+}
+.filter{
+    display: flex;
+    gap: 1rem;
+    
+}
+.filter p:hover{
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    color:  rgb(196, 132, 13) !important ;
+}
+.items{
+    display: grid;
+    width: 97.6%;
+    grid-template-columns: 72.6% 25%;
+    gap: 2rem;
+}
+.allhotels{
+    
+    padding-top: 1rem;
+    gap: 4rem;
+}
+.gridhotels{
+    display: grid;
+    
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cards {
+        background-color: rgb(241, 234, 234);
+        text-align: center;
+        color: rgb(90, 88, 88);
+        line-height: 1.5rem;
+        text-decoration: none;
+        border-radius: 1rem;
+        
+        
+}
+.pictures{
+    float: left;
+    width:  100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.text{
+    margin-top: 21rem;
+    text-transform: uppercase;
+}
+.cards:hover{
+    filter: brightness(90%);
+  
+}
+.reservation{
+    text-align: center;
+    background: rgb(36, 35, 35);
+    height: 70vh;
+    color: #eee;
+    display: non;
+    
+}
+.links{
+    color: rgb(158, 82, 20);
+    text-decoration: none;
+}
+input[type=range]{
+    accent-color: #bd6818;
+    width: 90%;
+    height: 20%;
+}
+.submit{
+    padding: 5% 10% 5% 10%;
+    font-size: 1.5rem;
+    background-color: rgb(196, 110, 41);
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.spiner{
+    justify-content: center;
+    transform: rotate(90deg);
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(594deg) brightness(100%) contrast(1%);
+}
+.hrline{
+    margin-bottom: 2rem;
+}
+.shortdeschotel{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}

@@ -1,0 +1,25 @@
+input[type=email]{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    height: 2.5rem;
+    border: 1px solid rgb(185, 185, 185);
+}
+input[type=email]:focus{
+    outline: auto rgb(119, 118, 118);
+    border: none;
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.warrning{
+    color: red;
+}
+input[type=text]{
+    text-transform: none;
+}
+.hiddenMessage{
+    display: none;
+}

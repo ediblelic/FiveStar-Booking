@@ -1,0 +1,100 @@
+.smalltitlelogin{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(39, 37, 37);
+}
+.hotelnavlogin{
+    display: flex;
+    gap: 1rem;
+    font-size: .6rem;
+    color: rgb(85, 79, 79);
+}
+
+*{
+
+   padding: 0;
+}
+.login{
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 1.7rem;
+    color: rgb(19, 18, 18);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.username{
+    color: rgb(143, 142, 142);
+}
+.lables-inputs{
+    
+    width: 97.5%;
+}
+input[type=text]{
+    background-color: transparent;
+    margin: 0;
+    text-transform: lowercase;
+    padding: 0;
+    font-size: 1rem;
+    height: 2.5rem;
+    border: 1px solid rgb(185, 185, 185);
+}
+input[type=text]:focus{
+    outline: auto rgb(119, 118, 118);
+    border: none;
+}
+input[type=checkbox]{
+    margin-top: 5rem;
+}
+input[type=password]{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    height: 2.5rem;
+    border: 1px solid rgb(185, 185, 185);
+}
+input[type=password]:focus{
+    outline: auto rgb(119, 118, 118);
+    border: none;
+}
+.usernameinput{
+    width: 100%;
+    border: 10px solid rgb(46, 45, 45);
+}
+.loginbtn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: .9rem;
+    padding-top: .8rem;
+    background-color: rgb(48, 48, 48);
+    white-space: nowrap;
+
+}
+.loginbtn:hover{
+    background-color: rgb(175, 141, 77);
+    color: #fff;
+}
+.logindisplay{
+    display: flex;
+}
+.register{
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: .3rem;
+    font-size: 1.7rem;
+    color: rgb(100, 97, 97);
+}
+.register:hover{
+    color: rgb(22, 22, 22);
+}

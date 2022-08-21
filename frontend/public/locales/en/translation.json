@@ -1,0 +1,135 @@
+{
+    "title":{
+        "1":"Welcome to FiveStar"
+    },
+    "maintitle":{
+        "1":"A STUNNING HOTEL"
+        
+    },
+    "shortdesc":{
+        "1": "Our hotels offer the best offer in the country, we hope you enjoy. We wish you a pleasant rest"
+    },
+    "booknow":{
+        "1":"book now"
+    },
+    "numpeople":{
+        "1":"Number of people"
+    },
+    "home":{
+        "1":"Home"
+    }
+    ,
+    "blog":{
+        "1":"Blog"
+    }
+    ,
+    "portfolio":{
+        "1":"Portfolio"
+    },
+    "dummylorem":
+    {
+        "1":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. It to make a type specimen book. It has survived not only five centuries,  but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum has been the."
+    },
+    "heading":{
+        "1":"Lorem Ipsicum"
+    },
+    "hotelsearch":{
+        "1":"Hotel Search"
+    },
+    "low":{
+        "1":"Low to High"
+    },
+    "high":{
+        "1":"High to Low"
+    },
+    "default":{
+        "1":"Default"
+    },
+    "reservation":{
+        "1":"Reservation"
+    },
+    "starting":{
+        "1":"Starting From"
+    },
+    "details":{
+        "1":"View details"
+    },
+    "filter":{
+        "1":"Filter now"
+    },
+    "togo":{
+        "1":"Would you like to go to homepage instead, or search again?"
+    },
+    "404":{
+        "1":"Page just not found"
+    },
+    "smalltitle":{
+        "1":"Here are the"
+    },
+    "search":{
+        "1":"Search"
+    },
+    "contact":{
+        "1":"CONTACT"
+    },
+    "vintage":{
+        "1":"Vintage"
+    },
+    "newsletter":{
+        "1":"NEWSLETTER"
+    },
+    "roomdetails":{
+        "1":"ROOM DETAILS"
+    },
+    "location":{
+        "1":"LOCATION"
+    },
+    "reviews":{
+        "1":"REVIEWS"
+    },
+    "AMENITIES":{
+        "1":"AMENITIES"
+    },
+    "myaccount":{
+        "1":"My Account"
+    },
+    "username":{
+        "1":"Username or email address"
+    },
+    "login":{
+        "1":"LOGIN"
+    },
+    "reg":{
+        "1":"Register"
+    },
+    "errormail":{
+        "1":"Email isn't good!"
+    },
+    "fullname":{
+        "1":"Full Name"
+    },
+    "usernameisnotgood":{
+        "1":"User name is not good"
+    },
+    "errorfullname":
+    {
+        "1":"Full Name isn't good"
+    }
+    ,
+    "errorpassword":
+    {
+        "1":"Passwrod isn't good"
+    },
+    "needtobe":{
+        "1":"Need to be logged in"
+    },
+    "inital":{
+        "1":"INITIAL PRICE"
+    },
+    "dollar":{
+        "1":"$"
+    },
+    "yourprice":{
+        "1":"YOUR PRICE"
+    }
+}

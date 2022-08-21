@@ -1,0 +1,177 @@
+.Navigation{
+    background-color: rgb(69, 68, 68);
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+
+.logo{
+    width: 10rem;
+    margin-left: -.3rem;
+    padding-top: .4rem;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    color: rgb(199, 190, 190);
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 5rem;
+}
+.linkcolor{
+    color: rgb(199, 190, 190);
+}
+.navlist ul {   
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+    margin-right: 2rem;
+    font-size: .9rem;
+}
+.navlist ul li:hover{
+    cursor: pointer;
+    color: rgb(158, 149, 149);   
+}
+.navicons{
+    width: 1rem;
+    filter: invert(71%) sepia(98%) saturate(15%) hue-rotate(594deg) brightness(100%) contrast(111%);
+    margin-right: 2rem;
+}
+.navicons:hover{
+    cursor: pointer;
+    filter: invert(71%) sepia(98%) saturate(100%) hue-rotate(194deg) brightness(100%) contrast(11%);
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.card{
+    width: 1rem;
+    filter: invert(71%) sepia(98%) saturate(15%) hue-rotate(594deg) brightness(100%) contrast(111%);
+    margin-right: 2rem;
+}
+.card:hover{
+    cursor: pointer;
+    filter: invert(71%) sepia(98%) saturate(100%) hue-rotate(194deg) brightness(100%) contrast(11%);
+}
+.whiteNavigation{
+    background-color: #fff;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    color: black;
+}
+.brandwhite{
+    display: flex;
+    align-items: center;
+    filter: invert(71%) sepia(98%) saturate(100%) hue-rotate(194deg) brightness(40%) contrast(100%);
+}
+.navlistwhite{
+    display: flex;
+    align-items: center;
+    color: rgb(129, 102, 102);
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 5rem;
+}
+.navlistwhite ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+    margin-right: 2rem;
+    font-size: .9rem;
+}
+.navlistwhite ul li:hover{
+    cursor: pointer;
+    color: rgb(253, 177, 77);
+}
+.naviconswhite{
+    width: 1rem;
+    filter: invert(81%) sepia(98%) saturate(663%) hue-rotate(594deg) brightness(100%) contrast(0%);
+    margin-right: 2rem;
+}
+.naviconswhite:hover{
+    cursor: pointer;
+    filter: invert(81%) sepia(98%) saturate(663%) hue-rotate(594deg) brightness(100%) contrast(100%);
+}
+.cardwhite{
+    width: 1rem;
+    filter: invert(71%) sepia(98%) saturate(100%) hue-rotate(194deg) brightness(100%) contrast(11%);
+    margin-right: 2rem;
+}
+.cardwhite:hover{
+    cursor: pointer;
+    filter: invert(81%) sepia(98%) saturate(663%) hue-rotate(594deg) brightness(100%) contrast(100%);
+}
+.cardwhite::after{
+    content: "";
+    border-radius: 50%;
+}
+.active{
+    color: rgb(231, 172, 62) !important;
+}
+.items-in-card::after{
+    content: attr(data-items);
+    margin: -10px 0 0 -30px;
+    padding: 0;
+    position: absolute;
+    border-radius: 70%;
+    color: rgb(250, 210, 136);
+    background-color: transparent;
+    font-size: .8rem;
+    
+}
+.overlay{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+.closebtn{
+    font-size: 2.8rem;
+    position: absolute;
+    top: 5rem;
+    right: 6rem;
+    cursor: pointer;
+    color: rgb(235, 222, 222); 
+}
+.closebtn:hover{
+    transform: scale(1.1);
+    color: rgb(179, 129, 37);
+}
+.overlayhidden{
+   display: none;
+}
+.searchbar{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+.searchinput{
+    font-size: 1rem;
+    border: none;
+    width: 35%;
+    height: 8px;
+    background: transparent;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.linkcolornav{
+    color: rgb(199, 190, 190) ;
+}
+.linkcolornavwhite{
+    color: rgb(129, 102, 102);
+}

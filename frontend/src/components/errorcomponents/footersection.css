@@ -1,0 +1,57 @@
+.footer{
+    height: 50vh;
+    display: flex;
+    background-color: rgb(71, 66, 66);
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.columns{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10rem;
+    
+}
+.contactcol{
+    text-align: center;
+    color: #eee;
+}
+.paycards{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.paycards img:hover{
+    cursor: pointer;
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(594deg) brightness(100%) contrast(1%);
+}
+.vintage{
+    text-align: center;
+    color: #eee;
+    line-height: 1.8rem;
+}
+.newletter{
+    text-align: center;
+    color: #eee;
+    line-height: 1.5rem;
+}
+.emailsend{
+    font-size: 1.5rem;
+    height: 28%;
+    outline: none;
+    border: 1px solid gray;
+    color: rgb(180, 180, 169);
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.gobtn{
+    height: 30%;
+    width: 16%;
+    font-size: 1.5rem;
+    border: 1px solid gray;
+    color: #eee;
+    background-color: transparent;
+    cursor: pointer;
+}

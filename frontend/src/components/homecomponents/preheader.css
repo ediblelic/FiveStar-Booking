@@ -1,0 +1,74 @@
+.preheader{
+    background-color: rgba(30, 30, 30, 0.9999999);
+    
+}
+
+.container{
+    display: flex;
+    padding: 0rem 6rem 0rem 6rem;
+    
+    justify-content: space-between;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    color: rgb(148, 148, 148);
+    gap: .5rem;
+    font-size: .7rem;
+}
+.logoicons{
+    width: .7rem;
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(594deg) brightness(100%) contrast(1%);
+}
+.logoicons:hover{
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(394deg) brightness(100%) contrast(100%);
+    transition: 0.3s;
+}
+.othericons{
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(594deg) brightness(100%) contrast(1%);
+    width: .8rem;
+
+}
+.othericons:hover{
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(394deg) brightness(100%) contrast(100%);
+    transition: 0.3s;
+}
+.social{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    margin-right: 2rem;
+}
+.networks{
+    width: 1rem;
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(594deg) brightness(100%) contrast(1%);
+}
+.networks:hover{
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(394deg) brightness(100%) contrast(100%);
+    transition: 0.3s;
+}
+.facebook{
+    width: .6rem;
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(594deg) brightness(100%) contrast(1%);
+}
+.facebook:hover{
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(394deg) brightness(100%) contrast(100%);
+    transition: 0.3s;
+}
+.at{
+    width: 1rem;
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(594deg) brightness(100%) contrast(1%);
+}
+.at:hover{
+    filter: invert(71%) sepia(98%) saturate(1284%) hue-rotate(394deg) brightness(100%) contrast(100%);
+    transition: 0.3s;
+}
+.flags{
+    width: 1.2rem;
+    cursor: pointer;
+}
+.flags:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}

@@ -1,0 +1,134 @@
+{
+    "title":{
+        "1":"Wilkommen zu FiveStar"
+    },
+    "maintitle":{
+        "1": "ATEMBERAUBENDES HOTEL"
+    },
+    "shortdesc":{
+        "1": "Unsere Hotels bieten das beste Angebot des Landes, wir wünschen Ihnen viel Spaß. Wir wünschen Ihnen eine angenehme Erholung"
+    },
+    "booknow":{
+        "1":"Buchen Sie jetzt"
+    },
+    "numpeople":{
+        "1":"Anzahl der Personen"
+    },
+    "home":{
+        "1":"Heim"
+    }
+    ,
+    "blog":{
+        "1":"Bloggen"
+    }
+    ,
+    "portfolio":{
+        "1":"Portfolio"
+    },
+    "dummylorem":
+    {
+        "1":"Lorem Ipsum ist einfach Blindtext der Druck- und Satzindustrie. Lorem Ipsum ist seit den 1500er Jahren der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Galeere von Typen nahm und durcheinandermischte. Es, um ein Typenmusterbuch zu machen. Sie hat nicht nur fünf Jahrhunderte, sondern auch den Sprung in den elektronischen Satz überstanden und ist im Wesentlichen unverändert geblieben. Lorem Ipsum war der."
+    },
+    "heading":{
+        "1":"Irgendwas auf Deutsch"
+    },
+    "hotelsearch":{
+        "1":"Hotel Suche"
+    },
+    "low":{
+        "1":"Aufsteigend"
+    },
+    "high":{
+        "1":"Absteigend"
+    },
+    "default":{
+        "1":"Ursprünglich"
+    },
+    "reservation":{
+        "1":"Reservierung"
+    },
+    "starting":{
+        "1":"Ausgehend Von"
+    },
+    "details":{
+        "1":"Einzelheiten anzeigen"
+    },
+    "filter":{
+        "1":"Jetzt filtern"
+    },
+    "togo":{
+        "1":"Möchten Sie stattdessen zur Startseite gehen oder erneut suchen?"
+    },
+    "404":{
+        "1":"Seite einfach nicht gefunden"
+    },
+    "smalltitle":{
+        "1":"Hier sind die"
+    },
+    "search":{
+        "1":"Suche"
+    },
+    "contact":{
+        "1":"KONTAKT"
+    },
+    "vintage":{
+        "1":"Jahrgang"
+    } ,
+    "newsletter":{
+        "1":"das Rundschreiben"
+    },
+    "roomdetails":{
+        "1":"ZIMMERDETAILS"
+    },
+    "location":{
+        "1":"ORT"
+    },
+    "reviews":{
+        "1":"BEWERTUNGEN"
+    },
+    "AMENITIES":{
+        "1":"AUSSTATTUNG"
+    },
+    "myaccount":{
+        "1":"Mein Konto"
+    },
+    "username":{
+        "1":"Benutzername oder E-mail Adresse"
+    },
+    "login":{
+        "1":"Anmeldung"
+    },
+    "reg":{
+        "1":"Registrieren"
+    },
+    "errormail":{
+        "1":"E-Mail ist nicht gut!"
+    },
+    "fullname":{
+        "1":"Vollständiger Name"
+    }
+    ,
+    "usernameisnotgood":{
+        "1":"Benutzername ist nicht gut"
+    },
+    "errorfullname":
+    {
+        "1":"Vollständiger Name ist nicht gut"
+    },
+    "errorpassword":
+    {
+        "1":"Passwort ist nicht gut"
+    },
+    "needtobe":{
+        "1":"Anmeldung erforderlich"
+    },
+    "inital":{
+        "1":"ANFANGSPREIS"
+    },
+    "dollar":{
+        "1":"€"
+    },
+    "yourprice":{
+        "1":"DEIN PREIS"
+    }
+}
