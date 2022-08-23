@@ -68,15 +68,19 @@ export const BookHotelProvider = ({children}) => {
     if(user && parseInt(params))
     {
         disabledDays = bookedDates.filter(each => each.current_user !==  user.user_id && each.current_hotel === parseInt(params) )
-        if(disabledDays){
-            singleDisabledDay = disabledDays[disabledDays.length - 1]
-        }else{
-            alert('NEMA')
-        }
+     
+        singleDisabledDay = disabledDays[disabledDays.length - 1]
+    
+        
        
     }
-    console.log(filteredDates)
-    
+    if (!singleDisabledDay){
+        singleDisabledDay = {
+            checkin:'2050-01-01',
+            checkout: '2060-01-01'
+        }
+    }
+   
 
 
 

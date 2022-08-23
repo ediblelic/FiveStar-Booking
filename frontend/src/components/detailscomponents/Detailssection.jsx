@@ -62,7 +62,7 @@ function Detailssection(props) {
     let sdDisabledMounthList = checkoutDisabledDay.split('-')
     let sdDisabledMounth = parseInt(sdDisabledMounthList[1])
         
-   
+  
 
   return (
     <>
@@ -111,12 +111,12 @@ function Detailssection(props) {
                             {user ? null : <input type="text" className='loggedin' onClick={() => navigate('../login')} placeholder={t('needtobe.1')} />} 
                             <div className="alllabels">
                                 <p>Check in:</p>
-                                {openCalendar && <Calendar className='reservcalendar' onChange={setCheckin}  minDate={new Date()} maxDate={checkout} />}
+                                {openCalendar && <Calendar value={oneDate ? [parseISO(oneDate.checkin) , parseISO(oneDate.checkout) ] : checkin} className='reservcalendar' onChange={setCheckin}  minDate={new Date()} maxDate={oneDate ?  null : checkout} tileDisabled={({ date }) => date.getDate() >= parseInt(frDisabledDay) && date.getDate() <= parseInt(sdDisabledDay) && date.getMonth()  === sdDisabledMounth - 1 } />}
                                 <input className='checkininput' type="date" name='vreme' onClick={() => setOpenCalendar(!openCalendar)} onChange={setCheckin} value={format(checkin, 'yyyy-MM-dd')} />
                             </div>
                             <div className="alllabels">
                                 <p>Check out:</p>
-                                {opensdCalendar   && <Calendar value={oneDate ? [parseISO(oneDate.checkin) , parseISO(oneDate.checkout) ] : checkout} tileDisabled={({activeStartDate, date, view }) => date.getDate() >= parseInt(frDisabledDay) && date.getDate() <= parseInt(sdDisabledDay) && date.getMonth()  === sdDisabledMounth - 1 } className="reservcalendarsd" onChange={setCheckout} minDate={checkin} />}
+                                {opensdCalendar   && <Calendar value={oneDate ? [parseISO(oneDate.checkin) , parseISO(oneDate.checkout) ] : checkout} tileDisabled={({ date }) => date.getDate() >= parseInt(frDisabledDay) && date.getDate() <= parseInt(sdDisabledDay) && date.getMonth()  === sdDisabledMounth - 1 } className="reservcalendarsd" onChange={setCheckout} minDate={checkin} />}
                                 <input type="date" value={format(checkout, 'yyyy-MM-dd')} onClick={() => setOpensdCalendar(!opensdCalendar)} />
                             </div>
                             <p className='inital__price'>{t('inital.1')}:</p>
@@ -131,6 +131,7 @@ function Detailssection(props) {
                 </div>
              
             </div>
+            
         </div>
     </div>
     </>

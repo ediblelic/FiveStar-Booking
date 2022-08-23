@@ -21,6 +21,7 @@
     "react-animated-text": "^0.1.4",
     "react-calendar": "^3.7.0",
     "react-dom": "^18.2.0",
+    "react-geolocated": "^4.0.3",
     "react-i18next": "^11.17.2",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
