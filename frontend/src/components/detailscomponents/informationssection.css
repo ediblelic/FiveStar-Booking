@@ -66,5 +66,7 @@ ul {
     padding-left: 20%;
 }
 .googlemap{
+    margin-top: 1rem;
+    filter: invert(91%) sepia(98%) saturate(100%) hue-rotate(14deg) brightness(100%) contrast(60%);
     
 }
