@@ -1,24 +1,30 @@
 import { format } from "date-fns";
 import { createContext, useContext, useEffect, useState } from "react";
 import { useParams,useNavigate } from "react-router";
+import { useTranslation } from 'react-i18next';
 import AuthContext from "./AuthContext";
+import SendWelcomeEmailContext from "./SendWelcomeEmailContext";
 const BookHotelContext = createContext();
 export default BookHotelContext;
 export const BookHotelProvider = ({children}) => {
     let [checkin, setCheckin] = useState(new Date());
     let [checkout, setCheckout] = useState(new Date());
+    const [t,i18n] = useTranslation()
+    
     let url = window.location.href
     const navigate = useNavigate()
-
+    const { sendBookingEmail } = useContext(SendWelcomeEmailContext)
+    const { sendBookingEmailDe } = useContext(SendWelcomeEmailContext)
     let { user } =  useContext(AuthContext)
     let params = url.substring(url.length - 1)
     let cooki = document.cookie
     let seperate = cooki.split('=')
     const csrfToken = seperate[1]
     const [bookedDates,setBookedDates] = useState([])
-    let roomAlreadyBooked;
+    
     const bookHotelDate = async(e) => {
         e.preventDefault()
+        
         const api = await fetch('/api/reserv/',{
             method:'POST',
             headers: {
@@ -35,14 +41,19 @@ export const BookHotelProvider = ({children}) => {
                 )
         })
         
-       
+        
         if (api.status === 200){
             alert('You have successfully booked the date')
-            navigate('../')
-            window.location.reload()
+           
+            
         }
         else {
             alert('Room booked already')
+        }
+        if (i18n.language === 'de'){
+            sendBookingEmailDe()
+        }else{
+            sendBookingEmail()
         }
     }
     const request = async() => {
@@ -81,10 +92,6 @@ export const BookHotelProvider = ({children}) => {
         }
     }
    
-
-
-
-
     let bookingData = {
         checkin:checkin,
         setCheckin:setCheckin,

@@ -1,4 +1,5 @@
 from dataclasses import field, fields
+from pyexpat import model
 from rest_framework.serializers import ModelSerializer
 from .models import Companyinfo,BackgroundImages,Hotels,Reservations
 from django.contrib.auth.models import User
@@ -25,3 +26,7 @@ class EveryReservationSerilizer(ModelSerializer):
     class Meta:
         model = Reservations
         fields = '__all__'
+class UserInformationSerilizer(ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['email']

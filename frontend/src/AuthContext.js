@@ -24,6 +24,7 @@ export const AuthProvider = ({children})  => {
                 setUser(jwt_decode(data.access))
                 localStorage.setItem('authTokens',JSON.stringify(data))
                 navigate('../')
+                window.location.reload()
             }else{
                 alert('Check username or password!')
             }

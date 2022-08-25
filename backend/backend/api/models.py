@@ -38,7 +38,7 @@ class Hotels(models.Model):
 class Reservations(models.Model):
     current_user =  models.ForeignKey(User,default=None,on_delete=models.CASCADE)
     current_hotel = models.ForeignKey(Hotels,default=None,on_delete=models.CASCADE)
-    checkin =  models.DateField(default=None,unique=True)
-    checkout = models.DateField(default=None, unique=True)
+    checkin =  models.DateField(default=None)
+    checkout = models.DateField(default=None)
     def __str__(self):
         return f'{self.current_user} has booked {self.current_hotel}'

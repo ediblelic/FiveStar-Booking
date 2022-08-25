@@ -16,6 +16,7 @@ import Register from './Register'
 import { RegisterUserProvider } from '../RegisterUserContext'
 import { RegisterUserInfoProvider } from '../RegisterUserInfoContext'
 import { BookHotelProvider } from '../BookHotelContext'
+import { SendWelcomeEmailProvider } from '../SendWelcomeEmailContext'
 function Pages() {
     const location = useLocation()
 
@@ -27,7 +28,9 @@ function Pages() {
                 <AuthProvider>
                     <RegisterUserProvider>
                         <RegisterUserInfoProvider>
+                              <SendWelcomeEmailProvider>
                             <BookHotelProvider>
+
                               <Routes location={location} key={location.pathname}>
                                     <Route path="/" exact element={<Home  />} />
                                     <Route path='/hotels' element={<Hotels />} />
@@ -39,6 +42,7 @@ function Pages() {
                                     <Route path= '/register'  element={<Register />} />
                               </Routes>
                             </BookHotelProvider>
+                              </SendWelcomeEmailProvider>
                         </RegisterUserInfoProvider>
                     </RegisterUserProvider>
                 </AuthProvider>

@@ -10,7 +10,8 @@ import './detailssection.css'
 import format from 'date-fns/format';
 import BookHotelContext from '../../BookHotelContext'
 import Calendar from 'react-calendar'
-import { parseISO } from 'date-fns'
+import { daysInWeek, parseISO } from 'date-fns'
+import SendWelcomeEmailContext from '../../SendWelcomeEmailContext'
 function Detailssection(props) {
     const {t,i18n} = props 
     let {regInfo} = useContext(RegisterUserInfoContext)
@@ -29,7 +30,8 @@ function Detailssection(props) {
     let { oneDate } = useContext(BookHotelContext)   
     let calculateTimeDifference = checkout.getTime() - checkin.getTime() 
     let calculateDaysDifference = calculateTimeDifference /  (1000 * 3600 * 24)
-
+    //SENDMAILFUNCTION
+    const { sendBookingEmail } = useContext(SendWelcomeEmailContext)
     
     const getSingleHotel = async (name) =>{
         const api = await fetch(`/api/hotels/${params.name}`)
@@ -124,7 +126,7 @@ function Detailssection(props) {
                             {user ? <p className='inital__pricesd'>{t('yourprice.1')}:</p> : null}
                             {user ? <p className='pricehotelssd'>{checkin === checkout || checkin > checkout || yourPrice === 0 ? detailHotel.price :  parseInt(yourPrice)} {t('dollar.1')}</p> : null }
                         
-                            <button disabled={!user || checkin >  checkout} className='btn' onClick={bookHotelDate}> {t('booknow.1')} </button>
+                            <button disabled={!user || checkin >  checkout} className='btn' onClick={bookHotelDate} > {t('booknow.1')} </button>
                         </form>
 
                     </div>

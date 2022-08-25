@@ -12,6 +12,7 @@ function LowToHigh() {
         <Preheader language={t} setLanguage={i18n} />
         <Navigation t={t} i18n={i18n} />
         <LowToHighSection  t={t} i18n={i18n} />
+        
     </>
   )
 }

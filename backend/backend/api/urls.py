@@ -15,6 +15,9 @@ urlpatterns =[
     path('register', views.reguser,name="reguser" ),
     path('reserv/',views.make_resservation,name='make_resservation'),
     path('allres',views.seereservations,name='allres'),
+    path('email/<str:pk>/', views.get_user_email, name='get_user_email'),
+    path('email/<str:email>/username/<str:username>', views.send_welcome_mail, name='send_welcome_mail'),
+    path('email/<str:email>/username/<str:username>/de', views.send_welcome_mail_de, name='send_welcome_mail_de'),
 
 
 ]
