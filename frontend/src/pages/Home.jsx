@@ -4,7 +4,6 @@ import Navigation from '../components/homecomponents/Navigation'
 import MainSection from '../components/homecomponents/MainSection'
 import { useTranslation } from 'react-i18next';
 import Sdsection from '../components/homecomponents/Sdsection';
-import { NumofpeopleProvider } from '../NumofpeopleContext';
 function Home() {
   const [t,i18n] = useTranslation()
   

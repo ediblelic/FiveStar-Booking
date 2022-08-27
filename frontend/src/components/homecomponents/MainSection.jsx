@@ -22,7 +22,7 @@ function MainSection(props) {
     setOpenCalendar(false)
     setOpensdCalendar(false)
   }
-  console.log(numofpeople)
+ 
 
   
 
@@ -37,7 +37,7 @@ function MainSection(props) {
           effect="verticalFadeIn"
           iterations={1} /></h1>
         <hr color='orange' width="20%" />
-        <p style={{ textAlign: 'center', color: 'white', fontSize: '1.2rem', lineHeight: '3rem', paddingBottom: '2rem', }}>{t('shortdesc.1')}</p>
+        <p className='shortdesc_style'>{t('shortdesc.1')}</p>
 
 
 
@@ -57,7 +57,7 @@ function MainSection(props) {
               <div className="alllabels">
                 <h3 className='label-label'>Check-out:</h3>
                 {opensdCalendar && <Calendar className="calendare" onChange={setCheckout} minDate={checkin} />}
-                <input type="date" value={format(checkout, 'yyyy-MM-dd')} onClick={() => setOpensdCalendar(!opensdCalendar)} />
+                <input type="date" value={format(checkout, 'yyyy-MM-dd')} onChange={setCheckout} onClick={() => setOpensdCalendar(!opensdCalendar)} />
               </div>
 
               <div className="alllabels">

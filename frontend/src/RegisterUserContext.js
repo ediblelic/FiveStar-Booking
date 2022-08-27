@@ -7,7 +7,7 @@ export const  RegisterUserProvider = ({ children }) => {
     let cooki = document.cookie
     let seperate = cooki.split('=')
     const csrfToken = seperate[1]
-    console.log(cooki)
+    
     const regUser = async(e) => {
         e.preventDefault()
        

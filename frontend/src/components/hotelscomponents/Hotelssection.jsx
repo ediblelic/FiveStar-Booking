@@ -2,24 +2,22 @@ import React, { useEffect } from 'react'
 import { useContext } from 'react'
 import { NumofpeopleContext } from '../../NumofpeopleContext'
 import { FilterHotelsContext } from '../../FilterHotelsContext'
-import Calendar from 'react-calendar'
+
 import {Link} from 'react-router-dom'
-import format from 'date-fns/format'
+
 import './hotelssection.css'
 import { useState } from 'react'
 import { PulseLoader } from 'react-spinners'
 const Hotelssection = (props) => {
-  const [numofpeople,setNumofpeople] = useContext(NumofpeopleContext)
+  const [numofpeople] = useContext(NumofpeopleContext)
   let filterNumofPeople = useContext(FilterHotelsContext)
   
   const [hotels,setHotels] = useState([])
   const [range,setRange] = useState(0)
-  const [checkin, setCheckin] = useState(new Date());
-  const [checkout, setCheckout] = useState(new Date());
   const [openCalendar,setOpenCalendar] = useState(false)
   const [opensdCalendar,setOpensdCalendar] = useState(false)
   const [loading,setLoading] = useState(true)
-  if (openCalendar == true && opensdCalendar == true){
+  if (openCalendar === true && opensdCalendar === true){
     setOpenCalendar(false)
     setOpensdCalendar(false)
   }
@@ -44,9 +42,7 @@ const Hotelssection = (props) => {
     getDefaultHotels()
     
   },[])
-
-  
-  const {t,i18n} = props
+  const {t} = props
   return (
     <>
       <div className='container'>
@@ -69,7 +65,7 @@ const Hotelssection = (props) => {
         <Link to={''}>
          <p style={{color:'orange'}}>{t('default.1')}</p>
         </Link>
-        <Link to={filterNumofPeople.length == 0 ? '' : 'low-to-high'} style={{color:'black'}}>
+        <Link to={filterNumofPeople.length === 0 ? '' : 'low-to-high'} style={{color:'black'}}>
          <p>{t('low.1')}</p>
         </Link>
          <Link style={{color:'black'}} to={'high-to-low'}>

@@ -42,3 +42,11 @@ class Reservations(models.Model):
     checkout = models.DateField(default=None)
     def __str__(self):
         return f'{self.current_user} has booked {self.current_hotel}'
+class UserProfile(models.Model):
+    client       = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    phone        = models.CharField(max_length=200, unique=True, null=True)
+    profile_pic  = models.ImageField(default='default.png', null=True, blank=True, upload_to='profile_images')
+    bio          = models.CharField(max_length=100, null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.client.username} Profile'

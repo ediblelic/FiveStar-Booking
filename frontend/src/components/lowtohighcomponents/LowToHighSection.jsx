@@ -5,8 +5,8 @@ import { FilterHotelsContext } from '../../FilterHotelsContext'
 import { PulseLoader } from 'react-spinners'
 import { NumofpeopleContext } from '../../NumofpeopleContext'
 function LowToHighSection(props) {
-    const {t,i18n} = props 
-    const [numofpeople,setNumofpeople] = useContext(NumofpeopleContext)
+    const {t} = props 
+    const [numofpeople] = useContext(NumofpeopleContext)
     let filterNumofPeople = useContext(FilterHotelsContext)
     const [loading,setLoading] = useState(true)
     const [hotels,setHotels] = useState([])

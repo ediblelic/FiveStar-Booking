@@ -11,12 +11,14 @@ import ScrollOnTopComponent from '../components/scrollontopcomponents/ScrollOnTo
 import LowToHigh from './LowToHigh'
 import HighToLow from './HighToLow'
 import Login from './Login'
-import AuthContext, { AuthProvider } from '../AuthContext'
+import  { AuthProvider } from '../AuthContext'
 import Register from './Register'
 import { RegisterUserProvider } from '../RegisterUserContext'
 import { RegisterUserInfoProvider } from '../RegisterUserInfoContext'
 import { BookHotelProvider } from '../BookHotelContext'
 import { SendWelcomeEmailProvider } from '../SendWelcomeEmailContext'
+import Account from './Account'
+import { UserProfileProvider } from '../UserProfileContext'
 function Pages() {
     const location = useLocation()
 
@@ -29,19 +31,21 @@ function Pages() {
                     <RegisterUserProvider>
                         <RegisterUserInfoProvider>
                               <SendWelcomeEmailProvider>
-                            <BookHotelProvider>
-
-                              <Routes location={location} key={location.pathname}>
-                                    <Route path="/" exact element={<Home  />} />
-                                    <Route path='/hotels' element={<Hotels />} />
-                                    <Route path='/error' element={<Error />} />
-                                    <Route path='/hotels/low-to-high' element={<LowToHigh />} />
-                                    <Route path='/hotels/high-to-low' element={<HighToLow />} />
-                                    <Route path='/hotels/:name' element={<Details />} />
-                                    <Route path='/login' element={<Login />} />
-                                    <Route path= '/register'  element={<Register />} />
-                              </Routes>
-                            </BookHotelProvider>
+                                    <BookHotelProvider>
+                                        <UserProfileProvider>
+                                        <Routes location={location} key={location.pathname}>
+                                              <Route path="/" exact element={<Home  />} />
+                                              <Route path='/hotels' element={<Hotels />} />
+                                              <Route path='/error' element={<Error />} />
+                                              <Route path='/hotels/low-to-high' element={<LowToHigh />} />
+                                              <Route path='/hotels/high-to-low' element={<HighToLow />} />
+                                              <Route path='/hotels/:name' element={<Details />} />
+                                              <Route path='/login' element={<Login />} />
+                                              <Route path='/register'  element={<Register />} />
+                                              <Route path='/account' element={<Account />} />
+                                        </Routes>
+                                        </UserProfileProvider>
+                                      </BookHotelProvider>
                               </SendWelcomeEmailProvider>
                         </RegisterUserInfoProvider>
                     </RegisterUserProvider>

@@ -1,3 +1,4 @@
+from http import client
 from http.client import BAD_REQUEST
 from smtplib import SMTPRecipientsRefused
 from urllib import response
@@ -12,8 +13,8 @@ from django.contrib.auth.models import User
 from yaml import serialize
 from rest_framework import generics, permissions
 from rest_framework.response import Response
-from .models import Companyinfo, BackgroundImages, Hotels, Reservations
-from .serializers import Companyserializer,Backgroundserializer, EveryReservationSerilizer,Hotelsserializer, NewUserSerilzer,UserInformationSerilizer
+from .models import Companyinfo, BackgroundImages, Hotels, Reservations, UserProfile
+from .serializers import Companyserializer,Backgroundserializer, EveryReservationSerilizer,Hotelsserializer, NewUserSerilzer,UserInformationSerilizer,UserProfileSerilizer,UserExtendedInformationsSerilizer
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 from django.conf import settings
@@ -103,3 +104,13 @@ def send_welcome_mail_de(request,email,username):
         return Response({'Email':'Send'})
     except SMTPRecipientsRefused :
         return Response({'Email':'ISNT GOOD'})
+@api_view(['GET'])
+def user_profile(request,pk):
+    userprofile = UserProfile.objects.get(client=pk)
+    serialize = UserProfileSerilizer(userprofile,many=False)
+    return Response(serialize.data)
+@api_view(['GET'])
+def user_profile_extended(request,pk):
+    extended_user_profile = User.objects.get(id=pk)
+    serialize = UserExtendedInformationsSerilizer(extended_user_profile,many=False)
+    return Response(serialize.data)

@@ -1,7 +1,7 @@
 import React from 'react'
 import Preheader from '../homecomponents/Preheader'
 import Navigation from '../homecomponents/Navigation'
-import { useTranslation } from 'react-i18next'
+
 
 import {Link} from 'react-router-dom'
 import './errorsection.css'

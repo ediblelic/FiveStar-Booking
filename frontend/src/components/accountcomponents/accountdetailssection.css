@@ -1,0 +1,28 @@
+.accountinfos{
+    display: flex;
+    
+    background-color: rgb(223, 222, 222);
+    flex-direction: column;
+    width: 98%;
+    color: rgb(141, 114, 63);
+}
+.userNam{
+    display: flex;
+    gap: .3rem;
+    justify-content: center;
+  
+}
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+input[type=file]{
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.bio{
+    justify-content: center;
+    text-align: center;
+}

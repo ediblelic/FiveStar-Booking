@@ -5,9 +5,9 @@ import AuthContext from '../../AuthContext'
 import './loginsection.css'
 
 function LoginSection(props) {
-   const {t,i18n} = props
+   const { t } = props
    let {loginUser} = useContext(AuthContext)
-   let {user} = useContext(AuthContext)
+  
     
   return (
     <Fragment>

@@ -1,11 +1,9 @@
 import React from 'react'
 import Hotelssection from '../components/hotelscomponents/Hotelssection'
-import { NumofpeopleProvider } from '../NumofpeopleContext'
 import { useTranslation } from 'react-i18next';
 import Preheader from '../components/homecomponents/Preheader';
 import Navigation from '../components/homecomponents/Navigation';
 import Footersection from '../components/errorcomponents/Footersection';
-import { FilterHotelsProvider } from '../FilterHotelsContext';
 function Hotels() {
   const [t,i18n] = useTranslation()
   return (

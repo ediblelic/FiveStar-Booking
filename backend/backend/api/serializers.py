@@ -1,7 +1,7 @@
 from dataclasses import field, fields
 from pyexpat import model
 from rest_framework.serializers import ModelSerializer
-from .models import Companyinfo,BackgroundImages,Hotels,Reservations
+from .models import Companyinfo,BackgroundImages,Hotels,Reservations,UserProfile
 from django.contrib.auth.models import User
 from .forms import NewUserForm
 class Companyserializer(ModelSerializer):
@@ -30,3 +30,11 @@ class UserInformationSerilizer(ModelSerializer):
     class Meta:
         model = User
         fields = ['email']
+class UserProfileSerilizer(ModelSerializer):
+    class Meta:
+        model = UserProfile
+        fields = '__all__'
+class UserExtendedInformationsSerilizer(ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['email','username','first_name']

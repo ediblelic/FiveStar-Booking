@@ -18,6 +18,8 @@ urlpatterns =[
     path('email/<str:pk>/', views.get_user_email, name='get_user_email'),
     path('email/<str:email>/username/<str:username>', views.send_welcome_mail, name='send_welcome_mail'),
     path('email/<str:email>/username/<str:username>/de', views.send_welcome_mail_de, name='send_welcome_mail_de'),
+    path('userprofile/<int:pk>', views.user_profile, name='user_profile'),
+    path('user/profile/<str:pk>/infos', views.user_profile_extended, name='user_profile_extended')
 
 
 ]

@@ -1,35 +1,22 @@
-import React,{useContext, useEffect} from 'react'
+import React,{useContext} from 'react'
 import './registersecion.css'
-import AuthContext from '../../AuthContext'
 import {Link} from 'react-router-dom'
-import { useState } from 'react'
 import RegisterUserContext from '../../RegisterUserContext'
 import RegisterUserInfoContext from '../../RegisterUserInfoContext'
 
 function RegisterSection(props) {
-    const {t,i18n} = props
-    let {loginUser} = useContext(AuthContext)
-    let {user} = useContext(AuthContext)
+    const { t } = props
     let { regUser } = useContext(RegisterUserContext)
     const { emailRegex } = useContext(RegisterUserInfoContext)
-    let { registrationFields } = useContext(RegisterUserInfoContext)
     let {regInfo} = useContext(RegisterUserInfoContext)
-    let {setRegInfo} = useContext(RegisterUserInfoContext)
+  
     const { handleForm } = useContext(RegisterUserInfoContext)
     let { validForm } = useContext(RegisterUserInfoContext)
     let { userValid } = useContext(RegisterUserInfoContext)
     let { fullNameValid } = useContext(RegisterUserInfoContext)
     let { passwordValid } = useContext(RegisterUserInfoContext)
     
-    const [hideMessage,setHiddeMessage] = useState('')
-    
-    useEffect(() => {
-    
-        setHiddeMessage('hiddenMessage')
-    },[])
-    const showErrors = () => {
-        setHiddeMessage('warrning')
-    }
+
  
   return (
     <>

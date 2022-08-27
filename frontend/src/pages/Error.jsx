@@ -1,6 +1,4 @@
 import React from 'react'
-import Preheader from '../components/homecomponents/Preheader'
-import Navigation from '../components/homecomponents/Navigation'
 import { useTranslation } from 'react-i18next'
 import Errorsetion from '../components/errorcomponents/Errorsetion'
 import Footersection from '../components/errorcomponents/Footersection'

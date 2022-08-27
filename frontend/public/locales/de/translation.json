@@ -130,5 +130,8 @@
     },
     "yourprice":{
         "1":"DEIN PREIS"
+    },
+    "myacc":{
+        "1":"MEIN KONTO"
     }
 }

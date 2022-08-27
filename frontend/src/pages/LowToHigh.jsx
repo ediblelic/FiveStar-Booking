@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import Navigation from '../components/homecomponents/Navigation'
 import Preheader from '../components/homecomponents/Preheader'
 import LowToHighSection from '../components/lowtohighcomponents/LowToHighSection'
-import { FilterHotelsProvider } from '../FilterHotelsContext'
+
 function LowToHigh() {
     const [t,i18n] = useTranslation()
 
